@@ -1,0 +1,93 @@
+main {
+    background: url(./assets/img/back.png);
+    background-size: cover;
+    z-index: 100;
+}
+
+footer {
+    z-index: 100;
+}
+
+header {
+    z-index: 100;
+}
+
+p {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.brand-logo .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.mobile-title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+img.personal {
+    border-radius: 50%;
+    max-height: 30vmin;
+    max-width: 30vmin;
+}
+
+img.gif {
+    max-width: 30vmin;
+}
+
+.container:not(.footer) {
+    background: rgba(255,255,255, 0.9);
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.section:last-child {
+    padding-bottom: 0;
+}
+
+.padding.t100 {
+    padding-top: 100px;
+}
+
+.img-carousel {
+    width: 100px!important;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.icon-link {
+    color: #ffffff;
+    margin: 0 5px;
+}
+
+.icon-link .fab {
+    font-size: 30px;
+}
+
+.fix-row {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.vflex .vcol {
+    display: flex;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+}
+
+/* LAPTOPS, DESKTOP, TABLET */
+@media only screen and (max-width: 992px) {
+}
