@@ -46,14 +46,14 @@
 
     <main>
 
-        <div class="container z-depth-5">
+        <div id="main" class="container">
             <div id="about-me" class="section scrollspy">
                 <div class="row vflex">
                     <div class="col s12 m6 l6 center-align valign-wrapper vflex-center">
                         <img class="intro personal z-depth-3 animated opacity o0" src="./assets/img/pasquale_de_lucia.jpg" alt="Pasquale De Lucia | Web Developer"
                         />
                     </div>
-                    <div class="col s12 m6 l6 title intro animated opacity o0">
+                    <div class="col s12 m6 l6 title info-title animated opacity o0">
                         <h1>Pasquale De Lucia</h1>
                         <h2>Web Developer</h2>
                         <img class="gif" src="./assets/img/responsive.gif">
@@ -101,69 +101,172 @@
                     <div class="carousel-item amber white-text" href="#two!">
                         <h2>Stefania Casolo Ginelli</h2>
                         <p class="white-text">Graphic Designer</p>
-                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMAAgDGAAwAAQAAAAAAAA6DAAAAJGNhZTY4OTdjLTA2NjYtNGRmNi1iNWQ3LWExYmU4MmZhNjdmZg.jpg" alt="Stefania Casolo Ginelli" title="Stefania Casolo Ginelli">
+                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMAAgDGAAwAAQAAAAAAAA6DAAAAJGNhZTY4OTdjLTA2NjYtNGRmNi1iNWQ3LWExYmU4MmZhNjdmZg.jpg"
+                            alt="Stefania Casolo Ginelli" title="Stefania Casolo Ginelli">
                     </div>
                     <div class="carousel-item green white-text" href="#three!">
                         <h2>Giovanni Emanuele Nocco</h2>
                         <p class="white-text">Web Developer - Back-End</p>
-                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/00b/157/0f63bad.jpg" alt="Web Developer | Giovanni Emanuele Nocco" title="Web Developer | Giovanni Emanuele Nocco">
+                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/00b/157/0f63bad.jpg"
+                            alt="Web Developer | Giovanni Emanuele Nocco" title="Web Developer | Giovanni Emanuele Nocco">
                     </div>
                     <div class="carousel-item blue white-text" href="#four!">
                         <h2>Riccardo Zanzi</h2>
                         <p class="white-text">System Administrator</p>
-                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAg1AAAAJGVkM2E2NTdmLTk0MDktNDQ0MC04MWEzLTc5MDQ2OTI5MGZhZQ.jpg" alt="Riccardo Zanzi" title="Riccardo Zanzi">
+                        <img class="img-carousel z-depth-3 animated infinite pulse" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAg1AAAAJGVkM2E2NTdmLTk0MDktNDQ0MC04MWEzLTc5MDQ2OTI5MGZhZQ.jpg"
+                            alt="Riccardo Zanzi" title="Riccardo Zanzi">
                     </div>
                 </div>
             </div>
 
-        <div id="works" class="section scrollspy">
-            <div class="row fix-row vflex">
-                <div class="col s12 m6 l4 vcol">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/img/works/support-center.png">
-                            <!--<span class="card-title black-text">MainStreaming - Support Center</span>-->
-                            <a target="_blank" href="https://customerportal.mainstreaming.tv/" class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">link</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>MainStreaming - Support Center</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4 vcol">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/img/works/media-manager.svg">
-                            <!--<span class="card-title black-text">MainStreaming - Media Manager</span>-->
-                            <a target="_blank" href="https://help.mainstreaming.tv/" class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">link</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>MainStreaming - Media Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4 vcol">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/img/works/IdFinder.png">
-                            <!--<span class="card-title black-text">MainStreaming - Media Manager</span>-->
-                            <a target="_blank" href="https://chrome.google.com/webstore/detail/idfinder/hjnnbkbfciocofgmbkmdgbldbkfabcdc?authuser=2" class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">link</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>MainStreaming - Media Manager</p>
-                        </div>
-                    </div>
+            <div id="works" class="section scrollspy">
+                <div id="carousel-team-2" class="carousel works animated opacity o0">
+                    <a class="carousel-item" target="_blank" href="https://help.mainstreaming.tv/">
+                        <img src="./assets/img/works/support-center.png">
+                    </a>
+                    <a class="carousel-item" target="_blank" href="https://customerportal.mainstreaming.tv/">
+                        <img src="./assets/img/works/media-manager.svg">
+                    </a>
+                    <a class="carousel-item" target="_blank" href="https://chrome.google.com/webstore/detail/idfinder/hjnnbkbfciocofgmbkmdgbldbkfabcdc?authuser=2">
+                        <img src="./assets/img/works/IdFinder.png">
+                    </a>
                 </div>
             </div>
+
+            <div id="skills" class="section scrollspy">
+                <div class="skills">
+                    <ul class="lines">
+                        <li class="line l--0">
+                            <span class="line__label title">
+                                Skill level:
+                            </span>
+                        </li>
+                        <li class="line l--25">
+                            <span class="line__label">
+                                The basics
+                            </span>
+                        </li>
+                        <li class="line l--50">
+                            <span class="line__label">
+                                Advanced
+                            </span>
+                        </li>
+                        <li class="line l--75">
+                            <span class="line__label">
+                                Seasoned
+                            </span>
+                        </li>
+                        <li class="line l--100">
+                            <span class="line__label">
+                                Expert
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="charts">
+                        <div class="chart chart--dev">
+                            <span class="chart--dev-title">Development</span>
+                            <ul class="chart--horiz">
+                                <li class="chart__bar" style="width: 98%;">
+                                    <span class="chart__label">
+                                        HTML5
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 98%;">
+                                    <span class="chart__label">
+                                        CSS3 & SCSS
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 70%;">
+                                    <span class="chart__label">
+                                        JavaScript
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 40%;">
+                                    <span class="chart__label">
+                                        AngularJS
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 40%;">
+                                    <span class="chart__label">
+                                        ReactJS
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 60%;">
+                                    <span class="chart__label">
+                                        jQuery
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 55%;">
+                                    <span class="chart__label">
+                                        NodeJS
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 50%;">
+                                    <span class="chart__label">
+                                        Grunt / Gulp / Webpack
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 40%;">
+                                    <span class="chart__label">
+                                        .NET
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 60%;">
+                                    <span class="chart__label">
+                                        Umbraco
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 60%;">
+                                    <span class="chart__label">
+                                        Sitecore
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="chart chart--prod">
+                            <span class="chart--dev-prod">Productivity</span>
+                            <ul class="chart--horiz">
+                                <li class="chart__bar" style="width: 75%;">
+                                    <span class="chart__label">
+                                        Git + Github, Bitbucket & Sourcetree
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 80%;">
+                                    <span class="chart__label">
+                                        Microsoft Office
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="chart chart--design">
+                            <span class="chart--dev-design">Design</span>
+                            <ul class="chart--horiz">
+                                <li class="chart__bar" style="width: 45%;">
+                                    <span class="chart__label">
+                                        Photoshop
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 35%;">
+                                    <span class="chart__label">
+                                        Illustrator
+                                    </span>
+                                </li>
+                                <li class="chart__bar" style="width: 60%;">
+                                    <span class="chart__label">
+                                        User Experience
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-    </div>
 
     </main>
 

@@ -1,7 +1,10 @@
 var carousel = true;
 var carousel2 = true;
 var description = true;
-var intro = 0;
+var intro = true;
+var infoTitle = true;
+var dev = true;
+var justDestroyed = false;
 
 $(window).scroll(function () {
     appiar();
@@ -19,7 +22,7 @@ function appiar() {
             }
         }
     });
-    
+
     $('#carousel-team-2').each(function () {
         if (carousel2) {
             if (isScrolledIntoView($(this))) {
@@ -43,13 +46,38 @@ function appiar() {
             }
         }
     });
-    
+
     $('.intro').each(function () {
-        if (intro < 2) {
+        if (intro) {
             if (isScrolledIntoView($(this))) {
                 $(this).css('opacity', '1');
                 $(this).addClass('zoomInUp');
-                intro++;
+                intro = false;
+            }
+            else {
+            }
+        }
+    });
+
+    $('.info-title').each(function () {
+        if (infoTitle) {
+            if (isScrolledIntoView($(this))) {
+                $(this).css('opacity', '1');
+                $(this).addClass('zoomInUp');
+                infoTitle = false;
+            }
+            else {
+            }
+        }
+    });
+    
+    $('.chart--dev').each(function () {
+        if (dev) {
+            if (isScrolledIntoView($(this))) {
+                $('.chart--dev-title').addClass('chart__title');
+                $('.chart--dev-prod').addClass('chart__title');
+                $('.chart--dev-design').addClass('chart__title');
+                dev = false;
             }
             else {
             }
@@ -73,6 +101,49 @@ function isScrolledIntoView(elem) {
 $(document).ready(function () {
     appiar();
     $('.scrollspy').scrollSpy();
-    $('.carousel.carousel-slider').carousel({});
+    $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    $('.carousel.works').carousel({
+        noWrap: true,
+        indicators: true,
+        shift: 50,
+        dist: -150
+    });
+    if ($(window).width() < 600) {
+        $('#main').removeClass('z-depth-5');
+        justDestroyed = false;
+    } else {
+        $('#main').addClass('z-depth-5');
+        justDestroyed = true;
+    }
 });
 
+$(window).resize(function () {
+    if ($(window).width() < 600 && !justDestroyed) {
+        $('.carousel').carousel('destroy');
+        $('.carousel.works').carousel({
+            noWrap: true,
+            indicators: true,
+            shift: 50,
+            dist: -150
+        });
+
+        $('#main').removeClass('z-depth-5');
+
+        justDestroyed = true;
+    } else if ($(window).width() >= 600 && justDestroyed) {
+        if (justDestroyed) {
+            $('.carousel').carousel('destroy');
+            $('.carousel.works').carousel({
+                noWrap: true,
+                indicators: true,
+                shift: 50,
+                dist: -150
+            });
+
+            $('#main').addClass('z-depth-5');
+
+            justDestroyed = false;
+        }
+    }
+
+});
