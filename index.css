@@ -96,8 +96,8 @@ img.gif {
 
 .skills {
     width: 80%;
-    max-width: 960px;
-    height: 780px;
+    /*max-width: 960px;
+    height: 780px;*/
     margin: auto;
     position: relative;
   }
@@ -139,11 +139,12 @@ img.gif {
     font-weight: bold;
   }
   .charts {
-    width: 100%;
+    /*width: 100%;
     height: 100%;
-    position: absolute;
+    
     top: 0;
-    left: 0;
+    left: 0;*/
+    position: initial;
     z-index: 10;
   }
   .chart {
@@ -152,6 +153,7 @@ img.gif {
   .chart:first-child {
     margin: 0;
   }
+
   .chart__title {
     display: block;
     margin: 0 0 10px;
@@ -163,7 +165,7 @@ img.gif {
     animation-delay: 3.3s;
   }
   .chart--design .chart__title {
-    animation-delay: 4.5s;
+    animation-delay: 5.5s;
   }
   .chart--horiz {
     overflow: hidden;
@@ -210,20 +212,38 @@ img.gif {
   .chart--dev .chart__bar:nth-of-type(1) {
     animation-delay: 0.7s;
   }
+  .chart--prod .chart__bar:nth-of-type(7) {
+    animation-delay: 5.2s;
+  }
+  .chart--prod .chart__bar:nth-of-type(6) {
+    animation-delay: 5.0s;
+  }
+  .chart--prod .chart__bar:nth-of-type(5) {
+    animation-delay: 4.8s;
+  }
+  .chart--prod .chart__bar:nth-of-type(4) {
+    animation-delay: 4.6s;
+  }
+  .chart--prod .chart__bar:nth-of-type(3) {
+    animation-delay: 4.4s;
+  }
   .chart--prod .chart__bar:nth-of-type(2) {
     animation-delay: 4.2s;
   }
   .chart--prod .chart__bar:nth-of-type(1) {
     animation-delay: 4s;
   }
+  .chart--design .chart__bar:nth-of-type(4) {
+    animation-delay: 6.8s;
+  }
   .chart--design .chart__bar:nth-of-type(3) {
-    animation-delay: 5.6s;
+    animation-delay: 6.6s;
   }
   .chart--design .chart__bar:nth-of-type(2) {
-    animation-delay: 5.4s;
+    animation-delay: 6.4s;
   }
   .chart--design .chart__bar:nth-of-type(1) {
-    animation-delay: 5.2s;
+    animation-delay: 6.2s;
   }
   .chart__label {
     padding-left: 10px;

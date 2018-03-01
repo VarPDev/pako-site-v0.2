@@ -11,36 +11,12 @@ $(window).scroll(function () {
 });
 
 function appiar() {
-    $('#carousel-team').each(function () {
-        if (carousel) {
-            if (isScrolledIntoView($(this))) {
-                $('#carousel-team').css('opacity', '1');
-                $('#carousel-team').addClass('zoomInUp');
-                carousel = false;
-            }
-            else {
-            }
-        }
-    });
-
-    $('#carousel-team-2').each(function () {
-        if (carousel2) {
-            if (isScrolledIntoView($(this))) {
-                $('#carousel-team-2').css('opacity', '1');
-                $('#carousel-team-2').addClass('zoomInUp');
-                carousel2 = false;
-            }
-            else {
-            }
-        }
-    });
-
     $('#description').each(function () {
         if (description) {
             if (isScrolledIntoView($(this))) {
                 $('#description').css('opacity', '1');
                 $('#description').addClass('zoomInUp');
-                carousel = false;
+                description = false;
             }
             else {
             }
@@ -59,6 +35,30 @@ function appiar() {
         }
     });
 
+    $('#carousel-team').each(function () {
+        if (carousel) {
+            if (isScrolledIntoView($(this))) {
+                $('#carousel-team').css('opacity', '1');
+                $('#carousel-team').addClass('zoomInUp');
+                carousel = false;
+            }
+            else {
+            }
+        }
+    });
+
+    $('#works').each(function () {
+        if (carousel2) {
+            if (isScrolledIntoView($(this))) {
+                $('#carousel-team-2').css('opacity', '1');
+                $('#carousel-team-2').addClass('zoomInUp');
+                carousel2 = false;
+            }
+            else {
+            }
+        }
+    });    
+
     $('.info-title').each(function () {
         if (infoTitle) {
             if (isScrolledIntoView($(this))) {
@@ -71,12 +71,17 @@ function appiar() {
         }
     });
     
-    $('.chart--dev').each(function () {
+    $('.charts').each(function () {
         if (dev) {
             if (isScrolledIntoView($(this))) {
                 $('.chart--dev-title').addClass('chart__title');
                 $('.chart--dev-prod').addClass('chart__title');
                 $('.chart--dev-design').addClass('chart__title');
+
+                $('.chart--horiz').each(function () {
+                    $(this).children().addClass('chart__bar');
+                })
+                
                 dev = false;
             }
             else {
@@ -90,7 +95,7 @@ function isScrolledIntoView(elem) {
     var $window = $(window);
 
     var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
+    var docViewBottom = docViewTop + $window[0].innerHeight;
 
     var elemTop = $elem.offset().top;
     var elemBottom = elemTop + $elem.height();
